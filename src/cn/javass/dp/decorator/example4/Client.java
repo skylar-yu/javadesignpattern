@@ -18,9 +18,9 @@ public class Client {
 		//注意：这里只需要使用最后组合好的对象调用业务方法即可，会依次调用回去
 		//日期对象都没有用上，所以传null就可以了
 		
-		Decorator d4 = new MonthPrizeDecorator(d2);
+//		Decorator d4 = new MonthPrizeDecorator(d2);
 		
-		double zs = d4.calcPrize("张三",null,null);		
+		double zs = d2.calcPrize("张三",null,null);
 		System.out.println("==========张三应得奖金："+zs);
 		double ls = d2.calcPrize("李四",null,null);
 		System.out.println("==========李四应得奖金："+ls);

@@ -20,6 +20,7 @@ public class ConcreteDecoratorA extends Decorator {
 		this.addedState = addedState;
 	}
 
+	@Override
 	public void operation() {
 		//调用父类的方法，可以在调用前后执行一些附加动作
 		//在这里进行处理的时候，可以使用添加的状态
